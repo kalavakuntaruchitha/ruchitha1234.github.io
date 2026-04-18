@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form</title>
+    <link rel="stylesheet" href="contactform.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+</head>
+<body>
+   <!-- c-f input -->
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2> Get in Touch </h2>
+                    <hr>
+                </div>
+                    <input type="hidden" name="access_key" value="c744a5cc-8247-4070-ad91-b7904e69651d">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-form-inputs" required>
+                    <input type="text" name="mobile" placeholder="Phone Number" class="contact-form-inputs" required>
+                    <input type="email" name="email" placeholder="Email" class="contact-form-inputs" required>
+                    <textarea name="message" placeholder="message" class="contact-form-inputs" required></textarea>
+                    <button  type="submit" class="submit-btn">Submit <i class="bi bi-arrow-right"></i></button>
+            </form>
+            <div class="contact-right">
+                    <img src="./assets/img.avif" alt="">
+            </div>
+        </div>
+   <!-- c-f input end -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <script src="./contactform.js"></script>
+</body>
+</html> 
+
